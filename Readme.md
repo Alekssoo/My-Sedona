@@ -2,6 +2,7 @@
 
 - Студент: [Алексей Прытких](https://htmlacademy.ru/profile/id2719757).
 - Наставник: 'Нет`.
+- Сайт [MySetona](https://alekssoo.github.io/My-Setona/)
 
 ---
 
