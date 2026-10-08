@@ -16,10 +16,12 @@
             </a>
           </li>
           <li class="navigation-item current">
-            <a class="navigation-link" href="">Главная</a>
+            <a class="navigation-link" href="index.html" aria-current="page"
+              >Главная</a
+            >
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="№">О Седоне</a>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -28,17 +30,18 @@
 
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="">
-              <span class="visually-hidden">Добавить в избранное</span>
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Гостиниц в избранном</span>
+              <span class="count">12</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link button" href="№">Хочу сюда!</a>
+            <a class="navigation-link button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -46,7 +49,7 @@
 
     <main class="main-index">
       <h1 class="visually-hidden">Городок «Седона»</h1>
-      <img class="welcome" src="#" alt="Добро пожаловать в городок «Седона»" />
+      <img class="welcome" src="#" alt="Welcome to the gorgeous Sedona" />
       <p class="about-main">
         <span class="about-main-description bold"
           >Седона — небольшой городок в Аризоне, заслуживающий большего!</span
@@ -63,6 +66,7 @@
             <p class="advantages-description">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
+            <img src="#" alt="Фото улицы городка Седона" />
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Небольшая площадь</h3>
@@ -84,22 +88,24 @@
           </li>
           <li class="advantages-item advantages-leftimages">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
+            <img src="#" alt="Фото моста Дьявола в Седоне" />
             <p class="advantages-description">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
           </li>
         </ul>
       </section>
-      <p class="about-main">
-        <span class="about-main-description"
-          >Приезжайте в Седону отдохнуть в комфорте и уюте!</span
-        >
-        <span class="about-main-actions"
-          >Опытный персонал и качественное обслуживание!</span
-        >
-      </p>
       <section class="services">
         <h2 class="services-title visually-hidden">Услуги</h2>
+        <p class="about-main">
+          <span class="about-main-description"
+            >Приезжайте в Седону отдохнуть в комфорте и уюте!</span
+          >
+          <span class="about-main-actions"
+            >Опытный персонал и качественное обслуживание!</span
+          >
+        </p>
+
         <ul class="services-list">
           <li class="services-item housing-icon">
             <h3 class="services-name">Жильё</h3>
@@ -130,9 +136,7 @@
           >Укажите предполагаемые даты поездки,и мы покажем вам лучшие
           предложения гостиниц в Седоне</span
         >
-        <a href="catalog.html" class="offer-main-link button"
-          >Поиск гостиницы в Седоне</a
-        >
+        <button type="button">Поиск гостиницы в Седоне</button>
       </p>
       <section class="newsletter">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
@@ -147,7 +151,7 @@
           >
           <input
             class="field"
-            value="Ваш email"
+            placeholder="Ваш email"
             type="email"
             name="newsletter-email"
             id="newsletter-email"
@@ -163,18 +167,18 @@
     <footer class="page-footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Соцсети</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
+        <ul class="social-list">
+          <li class="social-item">
             <a class="button" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
-          <li class="footer-social-item">
+          <li class="social-item">
             <a class="button" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
-          <li class="footer-social-item">
+          <li class="social-item">
             <a class="button" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
             </a>
@@ -183,7 +187,7 @@
       </section>
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <address class="footer-contacts">
+        <address class="footer-contacts-address">
           <a class="footer-contacts-address-phone" href="tel:+78128121212"
             >+7 (812) 812-12-12</a
           >
