@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <title>Каталог Седоны</title>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
 
   <body>
     <header class="page-header">
       <a class="logo-link" href="#">
-        <span class="visually-hidden">Главная</span>
         <img
           class="logo"
           src="images/logo.svg"
@@ -16,6 +16,7 @@
           height="64"
           alt="Лого Городка «Седона»"
         />
+        <span class="visually-hidden">Логотип</span>
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -42,7 +43,9 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link button" href="№">Хочу сюда!</a>
+            <a class="navigation-link button" href="№">
+              <span class="navigation-link-title">Хочу сюда!</span></a
+            >
           </li>
         </ul>
       </nav>
@@ -487,13 +490,13 @@
       </section>
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <address class="footer-contacts">
-          <a class="footer-contacts-address-phone" href="tel:+78128121212"
+        <address class="contacts-address">
+          <a class="contacts-address-phone" href="tel:+78128121212"
             >+7 (812) 812-12-12</a
           >
         </address>
         <a
-          class="footer-contacts-map-link"
+          class="contacts-map-link"
           href="https://htmlacademy.ru/intensive/htmlcss"
         ></a>
         <span class="visually-hidden">Главная</span>
