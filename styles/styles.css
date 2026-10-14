@@ -29,7 +29,7 @@ body {
   font-weight: 700;
   text-align: center;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -53,6 +53,16 @@ body {
 
 .navigation-link-title {
   color: #fff;
+}
+
+.navigation-user .navigation-item:first-child {
+  background-image: url("../images/icons/find.svg");
+  background-repeat: no-repeat;
+}
+
+.navigation-user .navigation-item:first-child + .navigation-item {
+  background-image: url("../images/icons/favorites.svg");
+  background-repeat: no-repeat;
 }
 
 .inner-header-title {
@@ -138,8 +148,20 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+.services-item:first-child {
+  background-image: url("../images/icons/house.svg");
+  background-repeat: no-repeat;
+}
+
 .services-item:nth-child(2) {
   background-color: #fff;
+  background-image: url("../images/icons/food.svg");
+  background-repeat: no-repeat;
+}
+
+.services-item:last-child {
+  background-image: url("../images/icons/present.svg");
+  background-repeat: no-repeat;
 }
 
 .services-about {
@@ -204,11 +226,44 @@ body {
   color: #000;
 }
 
+.hotel-card-rating {
+  width: 276px;
+  height: 37px;
+  padding: 10px 12px;
+  line-height: 17px;
+}
+
+.hotel-card-rating-stars {
+  /*display: inline-block;*/
+  height: 17px;
+  background-image: url("../images/icons/star.svg");
+  background-size: 24px 17px;
+  background-repeat: repeat-x;
+}
+
+.stars-1 {
+  width: 18px;
+}
+.stars-2 {
+  width: 42px;
+}
+.stars-3 {
+  width: 66px;
+}
+.stars-4 {
+  width: 90px;
+}
+.stars-5 {
+  width: 114px;
+}
+
 .hotel-card-rating-customer {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  background-color: #f2f2f2;
+  border-radius: 4px;
 }
 
 .pagination-link {
@@ -230,6 +285,31 @@ body {
   list-style-type: none;
 }
 
+.social-item-link {
+  text-decoration: none;
+}
+
+.social-item:first-child {
+  background-image: url("../images/icons/VK.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 24px 14px;
+}
+
+.social-item:first-child + .social-item {
+  background-image: url("../images/icons/Telegram.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 18px 16px;
+}
+
+.social-item:last-child {
+  background-image: url("../images/icons/Yotube.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 22px 17px;
+}
+
 .contacts-address {
   font-style: normal;
 }
@@ -242,4 +322,9 @@ body {
   text-transform: uppercase;
   color: #000;
   text-align: center;
+}
+
+.logo {
+  background-image: url("../images/logo-html-academy.svg");
+  background-repeat: no-repeat;
 }
