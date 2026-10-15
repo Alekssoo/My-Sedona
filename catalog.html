@@ -10,7 +10,7 @@
     <header class="page-header">
       <a class="logo-link" href="#">
         <img
-          class="logo"
+          class="logo-main"
           src="images/logo.svg"
           width="138"
           height="64"
@@ -32,12 +32,12 @@
         </ul>
 
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
+          <li class="navigation-item find-item">
             <a class="navigation-link" href="">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item favorite-item">
             <a class="navigation-link" href="">
               <span class="visually-hidden">Добавить в избранное</span>
             </a>
@@ -51,7 +51,7 @@
       </nav>
     </header>
     <main class="main-inner">
-      <div class="wrapper-top">
+      <div class="catalog-wrapper-top">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -66,7 +66,7 @@
           </ul>
         </header>
 
-        <section class="catalog-filter-list">
+        <section class="catalog-filter">
           <h2 class="visually-hidden">Фильтры для гостиниц</h2>
           <form
             class="catalog-filter"
@@ -170,7 +170,7 @@
 
               <label class="catalog-filter-label">
                 <input
-                  class="catalog-filter-input"
+                  class="catalog-filter-input catalog-max-sum"
                   type="number"
                   name="max-price"
                   value="9000"
@@ -186,7 +186,9 @@
               </button>
             </fieldset>
 
-            <button class="button" type="submit">Применить</button>
+            <button class="button button-filter" type="submit">
+              Применить
+            </button>
             <button class="button reset-filters" type="reset">Сбросить</button>
           </form>
         </section>
@@ -251,7 +253,7 @@
             >
               В избранное
             </button>
-            <div class="hotel-card-rating-block">
+            <div class="hotel-card-rating">
               <span class="visually-hidden">Категория гостиницы: 4 звезды</span>
               <div
                 class="hotel-card-rating-stars stars-4"
@@ -290,7 +292,7 @@
             >
               В избранном
             </button>
-            <div class="hotel-card-rating-block">
+            <div class="hotel-card-rating">
               <span class="visually-hidden">Категория гостиницы: 5 звёзд</span>
               <div
                 class="hotel-card-rating-stars stars-5"
@@ -328,7 +330,7 @@
             >
               В избранное
             </button>
-            <div class="hotel-card-rating-block">
+            <div class="hotel-card-rating">
               <span class="visually-hidden">Категория гостиницы: 3 звезды</span>
               <div
                 class="hotel-card-rating-stars stars-3"
@@ -366,7 +368,7 @@
             >
               В избранное
             </button>
-            <div class="hotel-card-rating-block">
+            <div class="hotel-card-rating">
               <span class="visually-hidden">Категория гостиницы: 2 звезды</span>
               <div
                 class="hotel-card-rating-stars stars-2"
@@ -405,19 +407,23 @@
           </li>
         </ul>
       </section>
-      <section class="newsletter">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+      <section class="newsletter catalog-newsletter">
+        <h2 class="newsletter-title section-title">Подпишитесь на рассылку</h2>
         <form
           class="newsletter-form"
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
-          <label for="newsletter-email"
-            >Только полезная информация и никакого спама, честное
-            бойскаутское!</label
+          <p>
+            Только полезная информация и никакого спама, <br />честное
+            бойскаутское!
+          </p>
+
+          <label for="newsletter-email" class="visually-hidden"
+            >Ваша электронная почта</label
           >
           <input
-            class="field"
+            class="newsletter-input"
             placeholder="Ваш email"
             type="email"
             name="newsletter-email"
