@@ -14,7 +14,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -51,8 +59,21 @@ body {
   background-color: #fff;
 }
 
+.navigation {
+  display: flex;
+  margin: 0 auto;
+}
+
 .navigation-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 600px;
+}
+
+.navigation-user {
+  max-width: 310px;
+  margin-left: auto;
 }
 
 .navigation-link,
@@ -81,12 +102,20 @@ body {
   line-height: 78px;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .main-index {
   text-align: center;
 }
 
 .main-inner ul {
   list-style-type: none;
+}
+
+.page-container {
+  margin: 0 auto;
 }
 
 .welcome {
@@ -127,17 +156,41 @@ body {
 }
 
 .advantages-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+.advantages-item {
+  width: 400px;
+  height: 385px;
+  box-sizing: border-box;
+  padding: 112.5px 85px;
+}
+
 .advantages-item:first-child,
 .advantages-item:last-child {
   color: #fff;
   background-color: #82b3d3;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+.advantages-image {
+}
+
+.advantages-text {
+  flex-grow: 1;
+  padding: 0 85px;
 }
 
 .advantages-item:nth-child(3) {
@@ -155,22 +208,37 @@ body {
 .services-list {
   list-style-type: none;
   background-color: rgba(131, 179, 211, 0.2);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-item {
+  width: 400px;
+  height: 385px;
+  box-sizing: border-box;
+  padding: 81px 85px;
+  padding-top: 183px;
 }
 
 .services-item:first-child {
   background-image: url("../images/icons/house.svg");
   background-repeat: no-repeat;
+  background-position: center 81px;
 }
 
 .services-item:nth-child(2) {
   background-color: #fff;
   background-image: url("../images/icons/food.svg");
   background-repeat: no-repeat;
+  background-position: center 81px;
 }
 
 .services-item:last-child {
   background-image: url("../images/icons/present.svg");
   background-repeat: no-repeat;
+  background-position: center 81px;
 }
 
 .services-about {
@@ -403,6 +471,13 @@ body {
   background-color: #fff;
 }
 
+.page-footer-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 40px 70px 30px;
+}
+
 .social-list {
   list-style-type: none;
 }
@@ -447,6 +522,9 @@ body {
 }
 
 .logo {
+  display: inline-block;
   background-image: url("../images/logo-html-academy.svg");
   background-repeat: no-repeat;
+  width: 115px;
+  height: 33px;
 }
